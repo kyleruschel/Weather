@@ -15,7 +15,7 @@ const MainCard = props => {
         }
     }
 
-    const capFirst = str => {
+    const capitalizeFirstLetter = str => {
         if(!str.length) {
             return;
         }
@@ -32,7 +32,7 @@ const MainCard = props => {
             {show && <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={dayOrNight ? day : night} />
                 <Card.Body>
-                    <Card.Title>{capFirst(props.title)}</Card.Title> 
+                    <Card.Title>{capitalizeFirstLetter(props.title)}</Card.Title> 
                     <Card.Text>
                         {props.WeatherText}
                     </Card.Text>
