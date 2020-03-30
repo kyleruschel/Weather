@@ -5,9 +5,9 @@ import './card.css';
 const day = require('../../Assets/dayTime.svg');
 const night = require('../../Assets/nightTime.svg');
 
-const MainCard = props => {
+const MainCard = ({ Temperature, IsDayTime, WeatherText, weather, title }) => {
     const temperatureData = () => {
-        const tempData = Object(props.Temperature);
+        const tempData = Object(Temperature);
         for (let i in tempData) {
             const temp = tempData['Imperial'].Value;
             const deg = tempData['Imperial'].Unit;
@@ -16,7 +16,7 @@ const MainCard = props => {
     }
 
     const capitalizeFirstLetter = str => {
-        if(!str.length) {
+        if (!str.length) {
             return;
         }
         const body = str.slice(1, str.length);
@@ -24,17 +24,17 @@ const MainCard = props => {
         return first.concat(body);
     }
 
-    const dayOrNight = props.IsDayTime;
-    const show = props.weather.length ? true : false;
+    const dayOrNight = IsDayTime;
+    const show = weather.length ? true : false;
 
     return (
         <div className='mainCardContainer'>
             {show && <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={dayOrNight ? day : night} />
                 <Card.Body>
-                    <Card.Title>{capitalizeFirstLetter(props.title)}</Card.Title> 
+                    <Card.Title>{capitalizeFirstLetter(title)}</Card.Title>
                     <Card.Text>
-                        {props.WeatherText}
+                        {WeatherText}
                     </Card.Text>
                     <Card.Text>
                         {temperatureData()}
