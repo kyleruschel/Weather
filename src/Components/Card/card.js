@@ -19,7 +19,7 @@ const MainCard = props => {
         if(!str.length) {
             return;
         }
-        const body = str.slice(1, str.lengh);
+        const body = str.slice(1, str.length);
         const first = str[0].toUpperCase();
         return first.concat(body);
     }
