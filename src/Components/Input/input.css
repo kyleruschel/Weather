@@ -1,0 +1,13 @@
+.inputRootContainer {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.mb-3 {
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+}

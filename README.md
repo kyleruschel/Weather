@@ -5,6 +5,7 @@ This app was built using the following:
 * React.js
 * React hooks
 * React-bootstrap
+* Axios
 * AccuWeather api
 * Local Storage
 * Font Awesome

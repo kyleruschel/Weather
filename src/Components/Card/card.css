@@ -1,0 +1,17 @@
+.mainCardContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.card-title, .card-text {
+    font-family: 'Caveat', cursive;
+}
+
+.card-title {
+    font-size: 40px;
+}
+
+.card-text {
+    font-size: 24px;
+}
