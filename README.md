@@ -7,9 +7,10 @@ This app was built using the following:
 * React-bootstrap
 * Axios
 * AccuWeather api
-* Local Storage
 * Font Awesome
 * Google Fonts
+
+# If app is not showing information on search, we have hit the max api calls for the day
 
 # How to run
 * Clone and install
